@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 1,
+        "name": "Little Animal",
+        "price": "1 Month",
+        "img": "https://i.ibb.co/BsJ8dqm/image1.jpg",
+        "details": "BASIC is a family of new general-purpose, high-level programming languages designed for ease of use. The original version was created by John G. Kemeny and Thomas E. Kurtz at Dartmouth College in 1964. They wanted to enable students in non-scientific fields to use computers."
+    },
+    {
+        "_id": 2,
+        "name": "Full Stack",
+        "price": "6 Months",
+        "img": "https://i.ibb.co/ryKGZmQ/image2.jpg",
+        "details": "Full stack web development refers to the process of developing both client- and server-s_ide software. That means you can expect anyone with full stack included in their job title to have expertise in several front- and backend languages and frameworks. On the frontend, mastery in HTML and CSS is a common requirement for the field. Developers also tend to use JavaScript, jQuery, or Angular when developing a browser platform. Concerning the backend, full stack development consists of programming servers and databases. A server might call for code in PHP, ASP, Python, or Node, while a database can accept languages like SQL, SQLite, or MongoDB."
+    },
+    {
+        "_id": 3,
+        "name": "Front End Development",
+        "price": "3 Months",
+        "img": "https://i.ibb.co/YXfGPWz/image3.jpg",
+        "details": "Front-end web development, also known as client-s_ide development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing."
+    },
+    {
+        "_id": 4,
+        "name": "Back End Development",
+        "price": "3 Months",
+        "img": "https://i.ibb.co/FxYwhvj/image4.jpg",
+        "details": "Back-end Development refers to the server-s_ide development. It focuses on databases, scripting, website architecture. It contains behind-the-scene activities that occur when performing any action on a website. It can be an account login or making a purchase from an online store. Code written by back-end developers helps browsers to communicate with database information."
+    },
+    {
+        "_id": 5,
+        "name": "Flutter App Development",
+        "price": "4 Months",
+        "img": "https://i.ibb.co/mtHCGYZ/image5.jpg",
+        "details": "Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Andro_id quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms."
+    },
+    {
+        "_id": 6,
+        "name": "Java App Development",
+        "price": "5 Months",
+        "img": "https://i.ibb.co/MVGHrN0/image6.jpg",
+        "details": "Java is one of the powerful general-purpose programming languages, created in 1995 by Sun Microsystems (now owned by Oracle). Java is Object-Oriented. However, it is not cons_idered as pure object-oriented as it prov_ides support for primitive data types (like int, char, etc). Java syntax is similar to C/C++. But Java does not prov_ide low-level programming functionalities like pointers. Also, Java code is always written in the form of classes and objects. Andro_id heavily relies on the Java programming language all the SDKs required to build for andro_id applications use the standard libraries of Java. If one is coming from a traditional programming background like C, C++, Java is easy to learn. So in this discussion, there is a complete gu_ide to learn Java specifically cons_idering Andro_id App Development."
+    }
+]
