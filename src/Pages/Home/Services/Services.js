@@ -13,6 +13,7 @@ const Services = () => {
     return (
         <div>
             <h2 className='text-5xl font-bold text-center m-10'>Services</h2>
+            <hr className='pb-5'/>
             <div className='grid gap-8'>
                 {
                     services.map(service => <ServiceCard

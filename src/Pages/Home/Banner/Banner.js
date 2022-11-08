@@ -12,8 +12,7 @@ const Banner = () => {
                 <img src={image1} alt='' className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-15 right-5 top-2/4">
                     <h1 className='text-white text-6xl'>
-                        Need wild life  <br />
-                        Photography?
+                    Capture your <br /> beautiful moments?
                     </h1>
                 </div>
                 <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4">
@@ -29,8 +28,7 @@ const Banner = () => {
                 <img src={image2} alt='' className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-15 right-5 top-2/4">
                     <h1 className='text-white text-6xl'>
-                        Need wild life  <br />
-                        Photography?
+                    Capture your <br /> beautiful moments?
                     </h1>
                 </div>
                 <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4">
@@ -46,8 +44,7 @@ const Banner = () => {
                 <img src={image3} alt='' className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-15 right-5 top-2/4">
                     <h1 className='text-white text-6xl'>
-                        Need wild life  <br />
-                        Photography?
+                    Capture your <br /> beautiful moments?
                     </h1>
                 </div>
                 <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4 text-neutral">
@@ -63,8 +60,7 @@ const Banner = () => {
                 <img src={image4} alt='' className="w-full" />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-15 right-5 top-2/4">
                     <h1 className='text-white text-6xl'>
-                        Need wild life  <br />
-                        Photography?
+                        Capture your <br /> beautiful moments?
                     </h1>
                 </div>
                 <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4 text-2xl text-neutral">

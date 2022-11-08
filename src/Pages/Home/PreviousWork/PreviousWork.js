@@ -9,6 +9,7 @@ const PreviousWork = () => {
         <div className="hero my-20">
             <div>
                 <h2 className="text-5xl mb-9 font-bold text-center">Previous Work</h2>
+                <hr />
                 <div className="hero-content flex-col lg:flex-row">
                     <div className='relative w-1/2'>
                         <img src={img1} alt="" className=" border-2 w-4/5 h-full rounded-lg shadow-2xl" />

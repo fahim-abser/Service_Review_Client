@@ -7,6 +7,7 @@ const About = () => {
         <div className="hero my-20">
             <div>
                 <h2 className="text-5xl mb-9 font-bold text-center">About Me</h2>
+                <hr />
                 <div className="hero-content flex-col lg:flex-row">
                     <div className='relative w-1/2'>
                         <img src={photographer} alt="" className=" border-2 w-full h-full rounded-lg shadow-2xl" />
