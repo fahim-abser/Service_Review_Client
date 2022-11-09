@@ -14,7 +14,7 @@ const ServiceCard = ({ service }) => {
                 <h3 className='text-4xl'>Price: {price}</h3>
                 <p>{details.slice(0, 99)}...</p>
                 <div className="card-actions justify-end">
-                
+                <Link to={`/service/${service._id}`}><  button className="btn btn-primary">Details</button></Link>
                 </div>
             </div>
         </div>
