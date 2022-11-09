@@ -43,7 +43,11 @@ const Details = () => {
             .catch(er => console.error(er));
 
     }
-    
+    useEffect(() => {
+        fetch(`http://localhost:5000/reviews?serviceId=${_id}`)
+            .then(res => res.json())
+            .then(data => setReview(data))
+    }, [_id, review])
     return (
         
 
