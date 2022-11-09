@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -22,7 +22,9 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <Link className="btn text-center btn-primary">More Services...</Link>
+            <div className='text-center mt-10'>
+            <Link to={`/allservices`} className="btn text-center btn-primary">More Services...</Link>
+            </div>
         </div>
     );
 };

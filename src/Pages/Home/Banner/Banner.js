@@ -47,7 +47,7 @@ const Banner = () => {
                     Capture your <br /> beautiful moments?
                     </h1>
                 </div>
-                <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4 text-neutral">
+                <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4">
                     <p>
                         The word Photography literally means 'drawing with light', which derives <br /> from  the Greek photo, meaning light and graph, meaning to draw.</p>
                 </div>
@@ -63,7 +63,7 @@ const Banner = () => {
                         Capture your <br /> beautiful moments?
                     </h1>
                 </div>
-                <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4 text-2xl text-neutral">
+                <div className="absolute flex justify-between text-xl transform -translate-y-1/2 left-15 right-5 top-3/4 text-2xl">
                     <p>
                         The word Photography literally means 'drawing with light', which derives <br /> from  the Greek photo, meaning light and graph, meaning to draw.</p>
                 </div>

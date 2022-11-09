@@ -26,7 +26,7 @@ const Login = () => {
                             </label>
                             <input type="text" placeholder="password" name='password' className="input input-bordered" />
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <Link href="#" clssNme="lbel-text-alt link link-hover">Forgot password?</Link>
                             </label>
                         </div>
                         <div className="form-control mt-6">
@@ -35,6 +35,9 @@ const Login = () => {
                     </form>
                     <p className='font-bold text-center pb-3'>New here? <Link className='text-primary' to='/signup'>Sign Up</Link></p>
                 </div>
+                <form className='card-body'>
+                    <button className='btn btn-primary mb-5'>Sign in with google</button>
+                    </form>
             </div>
         </div>
     );

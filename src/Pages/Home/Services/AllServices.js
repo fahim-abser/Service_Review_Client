@@ -4,12 +4,12 @@ import ServiceCard from './ServiceCard';
 const AllServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:5000/allservices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
     return (
-        <div>
+        <div className='mb-5'>
             <h2 className='text-5xl font-bold text-center m-10'>Services</h2>
             <div className='grid gap-8'>
                 {

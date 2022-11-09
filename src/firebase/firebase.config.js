@@ -1,51 +1,19 @@
-import React from 'react';
-import { createContext } from 'react';
-import {createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
-import app from '../../firebase/firebase.config';
-import { useState } from 'react';
-import { useEffect } from 'react';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-export const AuthContext = createContext();
-const auth = getAuth(app);
-
-const AuthProvider = ({children}) => {
-    const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(true);
-
-    const createUser = (email, password) => {
-        setLoading(true);
-        return createUserWithEmailAndPassword(auth, email, password);
-    }
-
-    const login = (email, password) =>{
-        setLoading(true);
-        return signInWithEmailAndPassword(auth, email, password);
-    }
-
-    useEffect( () =>{
-        const unsubscribe = onAuthStateChanged(auth, currentUser =>{
-            console.log(currentUser);
-            setUser(currentUser);
-            setLoading(false);
-        });
-
-        return () =>{
-            return unsubscribe();
-        }
-    }, [])
-
-    const authInfo = {
-        user, 
-        loading,
-        createUser, 
-        login
-    }
-
-    return (
-        <AuthContext.Provider value={authInfo}>
-            {children}
-        </AuthContext.Provider>
-    );
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAFii9jS2RSYtcxyhpp9y-fXyemIskVF2A",
+  authDomain: "photography-website-d63ef.firebaseapp.com",
+  projectId: "photography-website-d63ef",
+  storageBucket: "photography-website-d63ef.appspot.com",
+  messagingSenderId: "1072661957105",
+  appId: "1:1072661957105:web:11d042acb088406de01c50"
 };
 
-export default AuthProvider;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+export default app;
