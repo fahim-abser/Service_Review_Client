@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
     return (
+
         <div className='m-5'>
+            <Helmet>
+                <title>Blog - LUCKY-Lens</title>
+            </Helmet>
             <p className='text-xl text-white'>Question 1:Difference between SQL and NoSQL</p>
             <p className='mb-3'>Ans: SQL is the programming language used to interface with relational databases. . NoSQL is a class of DBMs that are non-relational and generally do not use SQL.</p>
             <p className='text-xl text-white'>Question 2:What is JWT, and how does it work?</p>

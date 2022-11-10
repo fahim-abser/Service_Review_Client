@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
@@ -19,6 +20,9 @@ const Login = () => {
     }
     return (
         <div className="hero min-h-screen bg-base-200">
+            <Helmet>
+                <title>Login - LUCKY-Lens</title>
+            </Helmet>
             <div className="hero-content flex-col lg:flex-row px-20">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Need full Access???</h1>

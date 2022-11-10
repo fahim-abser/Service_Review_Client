@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import { Helmet } from "react-helmet";
 
 const Details = () => {
     const detail = useLoaderData();
@@ -22,6 +23,9 @@ const Details = () => {
             serviceId: _id
         }
 
+        const handleDelete = id => {
+
+        }
 
 
         fetch('http://localhost:5000/reviews', {
@@ -50,6 +54,9 @@ const Details = () => {
     }, [_id, review])
     return (
         <div>
+            <Helmet>
+                <title>Details - LUCKY-Lens</title>
+            </Helmet>
             <div className="card lg:card-side bg-base-300 shadow-2xl p-10">
                 <figure><img className='card-img' src={img} alt="Album" /></figure>
                 <div className="card-body">
@@ -65,7 +72,11 @@ const Details = () => {
                         <div className='card shadow-2xl bg-base-100'>
                             <h3 className='text-4xl m-5'>Previous Review:</h3>
                             {
-                                review.map(r => <h4 className='pl-5 text-2xl'>{r.message}</h4>)
+                                review.map(r => <h4 className=' text-2xl'>
+                                    <button className='btn mx-3 m-2'>X</button>
+                                    {r.message}
+
+                                </h4>)
                             }
 
                         </div>

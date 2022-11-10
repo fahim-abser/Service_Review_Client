@@ -55,6 +55,7 @@
 
 import React from 'react';
 import { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
@@ -76,6 +77,9 @@ const SignUp = () => {
 
     return (
         <div className="hero w-full my-20">
+            <Helmet>
+                <title>Sign up - LUCKY-Lens</title>
+            </Helmet>
             <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                 <h1 className="text-5xl font-bold">Don't have account?</h1>
