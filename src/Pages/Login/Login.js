@@ -1,3 +1,4 @@
+import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -18,15 +19,28 @@ const Login = () => {
         })
         .then(error=>console.log(error));
     }
+    const {providerLogin} = useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider()
+
+    const handleGoogleSignIn =()=>{
+        providerLogin(googleProvider)
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error=> console.error(error))
+    }
     return (
         <div className="hero min-h-screen bg-base-200">
             <Helmet>
                 <title>Login - LUCKY-Lens</title>
             </Helmet>
+            
             <div className="hero-content flex-col lg:flex-row px-20">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Need full Access???</h1>
                     <p className="py-6 text-3xl">Please Login here!</p>
+                    <button onClick={handleGoogleSignIn} className='btn btn-primary mb-5'>Sign in with google</button>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin} className="card-body">
@@ -52,7 +66,7 @@ const Login = () => {
                     <p className='font-bold text-center pb-3'>New here? <Link className='text-primary' to='/signup'>Sign Up</Link></p>
                 </div>
                 <form className='card-body'>
-                    <button className='btn btn-primary mb-5'>Sign in with google</button>
+                    
                     </form>
             </div>
         </div>
