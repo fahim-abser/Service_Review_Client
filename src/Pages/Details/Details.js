@@ -59,15 +59,28 @@ const Details = () => {
 
                 </div>
             </div>
-            <div>
-                <form onSubmit={handleReview}>
-                    <textarea name='message' className="textarea textarea-info" placeholder="Bio"></textarea>
-                    <button className='btn-primary'>Review Submit</button>
-                </form>
-                {
-                    review.map(r => <p>From p-tag{r.message}</p>)
-                }
+            <div className="hero mt-5 bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <div className="text-center lg:text-left">
+                        <div>
+                            <h3 className='text-4xl m-5'>Previous Review:</h3>
+                            {
+                                review.map(r => <h4 className='pl-5 text-2xl'>{r.message}</h4>)
+                            }
 
+                        </div>
+
+                    </div>
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="card-body">
+                            <form onSubmit={handleReview}>
+                                <textarea name='message' required className="textarea textarea-info m-5" placeholder="Leave a comment..."></textarea>
+
+                                <button className="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
