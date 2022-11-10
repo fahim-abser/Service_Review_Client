@@ -62,7 +62,7 @@ const Details = () => {
             <div className="hero mt-5 bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <div>
+                        <div className='card shadow-2xl bg-base-100'>
                             <h3 className='text-4xl m-5'>Previous Review:</h3>
                             {
                                 review.map(r => <h4 className='pl-5 text-2xl'>{r.message}</h4>)
