@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       {
         path: '/service/:id',
         element: <Details></Details>,
-        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+        loader:({params})=>fetch(`https://service-review-server-lyart.vercel.app/${params.id}`)
       },
       {
         path: '/addservice',
