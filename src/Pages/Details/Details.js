@@ -52,6 +52,7 @@ const Details = () => {
             .then(res => res.json())
             .then(data => setReview(data))
     }, [_id, review])
+    
     return (
         <div>
             <Helmet>

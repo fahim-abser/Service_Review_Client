@@ -4,7 +4,7 @@ import './ServiceCard.css'
 
 const ServiceCard = ({ service }) => {
 
-    const { img, name, price, details} = service;
+    const { img, name, price, details } = service;
     // console.log(service);
     return (
         <div className="card lg:card-side bg-base-300 shadow-2xl p-10">
@@ -14,7 +14,7 @@ const ServiceCard = ({ service }) => {
                 <h3 className='text-4xl'>Price: {price}</h3>
                 <p>{details.slice(0, 99)}...</p>
                 <div className="card-actions justify-end">
-                <Link to={`/service/${service._id}`}><  button className="btn btn-primary">Details</button></Link>
+                    <Link to={`/service/${service._id}`}><  button className="btn btn-primary">Details</button></Link>
                 </div>
             </div>
         </div>
